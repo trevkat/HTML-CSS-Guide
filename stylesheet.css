@@ -40,13 +40,13 @@ nav a:hover {
 /* social menu */
 
 a.tw {
-    background: url(img/tw.png) no-repeat center;
+    background: url(images/tw.png) no-repeat center;
     background-size: 80%;
 
 }
 
 a.fb {
-    background: url(img/fb.png) no-repeat center;
+    background: url(images/fb.png) no-repeat center;
     background-size: 80%;
 }
 
@@ -58,6 +58,10 @@ a.fb {
 .social {
     max-width: 80px;
     margin: 0 auto;
+}
+
+ul.social{
+  margin: 0;
 }
 
 /* tables */
