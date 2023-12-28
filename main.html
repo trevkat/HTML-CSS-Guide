@@ -10,18 +10,353 @@
 
     <nav>
         <ul>
-            <a href="#text_examples">Text&nbsp;Examples</a>
+            <a href="#text_examples">Text Examples</a>
             <a href="#lists">Lists</a>
             <a href="#links">Links</a>
             <a href="#images">Images</a>
-            <a href="#headings">Headings</a>
             <a href="#tables">Tables</a>
             <a href="#forms">Forms</a>
             <a href="#iframe">iframes</a>
-            <a href="#video">HTML&emsp;Video</a>
+            <a href="#video">HTML Video</a>
             <a href="mailto:trevor.katilius@gmail.com">Email&nbsp;Me</a>
         </ul>
+        <ul class="social">
+            <li><a href="" class="fb">Facebook</a></li>
+            <li><a href="" class="tw">Twitter</a></li>
+        </ul>
     </nav>
-    
-    
+
+    <section id="blocks">
+        <article>
+            <h2 id="text_examples">Text Examples</h2>
+            <p><strong>This is example text </strong>showing various ways to use HTML to format text in a paragraph.
+                This also show how to use the sup & sub element, which is used for dates:
+                July 4<sup>th</sup> and text like chemical formulas: H<sub>2</sub>O<br />
+                This is a line break in a paragraph, which i'd like to <em>emphasis</em> here.
+            <blockquote cite="https://www.anquotes.com/tyler-durden-quotes/?expand_article=1#SnippetTab">
+                <p><acronym title="Fight Club movie quotes">Here is a blockquote with some abbreivated text:</acronym> “This is your life, and it's ending one minute at a time.”</p>
+            </blockquote>
+            <p><del>Whoopse</del><ins> Or this quote by Tyler Durden:</ins> <q><i>You are not special. You are not a beautiful or unique snowflake.You are the same decaying organic matter as everything else.</i></q>
+            </p>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="lists">Lists</h2>
+            <ol>
+                <li>This is list item 1</li>
+                <li>This is list item 2</li>
+                <li>This is list item 3</li>
+                <ul>
+                    <li>This is a nested list</li>
+                    <li>This is a nested list</li>
+                    <li>This is a nested list</li>
+                </ul>
+            </ol>
+            <ul>
+                <li>Unordered list a</li>
+                <li>Unordered list b</li>
+                <li>Unordered list c</li>
+            </ul>
+            <dl>
+                <dt>Definition list of pizza toppings</dt>
+                <dd>Sauce, cheese, pepperoni, sausage</dd>
+            </dl>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="links">Links</h2>
+            <h4>Favorite Websites:</h4>
+            <br>
+            <ul>
+                <li><a href="https://www.theverge.com">The Verge</a></li>
+                <li><a href="https://www.macrumors.com">MacRumors</a></li>
+                <li><a href="https://www.daringfireball.net">Daring Fireball</a></li>
+                <li><a href="https://www.cnn.com" target="_blank">CNN</a>(Opens in a new window)</li>
+            </ul>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="images">Images</h2>
+
+            <img src="images/halo.jpg" alt="halo" title="halo" width="450" height="250" class="align-left medium" />
+            <p>Master Chief attacking the Covenant with an energy sword</p>
+
+            <p><img src="images/mclaren.jpeg" alt="mclarenp1" title="mclarenp1" width="450" height="250" class="align-right medium" />
+                This is the McLaren P1 while also demonstrating text with an image inside the start of a paragraph.</p>
+
+            <p><img src="images/batman.jpeg" alt="batman" title="batman" width="450" height="250" class="align-left medium" />
+                Batman with the image text aligned to the middle of the image.</p>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="tables">Tables</h2>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <h3>Table Headings:</h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th scope="col">Col 1</th>
+                    <th scope="col">Col 2</th>
+                </tr>
+                <tr>
+                    <th scope="row">Row 1:</th>
+                    <td>120</td>
+                    <td>135</td>
+                </tr>
+                <tr>
+                    <th scope="row">Row 2</th>
+                    <td>$600</td>
+                    <td>$675</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <h3>Spanning Columns:</h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Col 1</th>
+                    <th>Col 2</th>
+                    <th>Col 3</th>
+                    <th>Col 4</th>
+                </tr>
+                <tr>
+                    <th>Row 1</th>
+                    <td colspan="4">Four Columns of Data</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Row 2</th>
+                    <td colspan="3"></td>
+                    <td></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <h3>Spanning Rows:</h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>FOX</th>
+                    <th>NBC</th>
+                    <th>CNN</th>
+                </tr>
+                <tr>
+                    <th>6pm - 7pm</th>
+                    <td rowspan="2">Simpsons</td>
+                    <td>Comedy</td>
+                    <td>News</td>
+                </tr>
+                <tr>
+                    <th class="even">7pm - 8pm</th>
+                    <td class="even">Sports</td>
+                    <td class="even">Current Affairs</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <h3>Long Tables:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Income</th>
+                        <th>Expenses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1st January</th>
+                        <td>250</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <th class="even">2nd January</th>
+                        <td class="even">285</td>
+                        <td class="even">48</td>
+                    </tr>
+                    <tr>
+                        <th>3rd January</th>
+                        <td>260</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <th class="even">4th January</th>
+                        <td class="even">290</td>
+                        <td class="even">38</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="forms">Forms</h2>
+            <form action="http://www.example.com/comments.php">
+                <p>Username:
+                    <input type="text" name="Username" size="15" maxlength="30" />
+                </p>
+                <p>Password:
+                    <input type="password" name="password" size="15" maxlength="30" />
+                </p>
+                <h3>Text Area Form:</h3>
+            </form>
+            <br>
+            <br>
+            <form action="http://www.example.com/comments.php">
+                <p>What do you think?</p>
+                <textarea name="comments" cols="20" rows="4">Enter your comments....</textarea>
+            </form>
+            <h3>Radio Buttons:</h3>
+            <form action="http://www.example.com/profile.php"></form>
+            <p>Select your favorite genre:</p>
+            <input type="radio" name="genre" value="rock" checked="checked" /> Rock
+            <input type="radio" name="genre" value="pop" /> Pop
+            <input type="radio" name="genre" value="rap" /> Rap
+            </form>
+            <br>
+            <br>
+            </p>
+            <h3>Checkboxes:</h3>
+            <form action="http://www.example.com/profile.php"></form>
+            <p>Select your favorite musician:</p>
+            <input type="checkbox" name="musician" value="Slipknot" checked="checked" /> Slipknot
+            <input type="checkbox" name="musician" value="nineinchnails" /> Nine Inch Nails
+            <input type="checkbox" name="musician" value="linkinpark" /> Linkin Park
+            </form>
+            <br>
+            <br>
+            <h3>Drop Down List Boxes:</h3>
+            <form action="http://www.example.com/profile.php"></form>
+            <p>What is your favorite game console:</p>
+            <select name="consoles">
+                <option value="Xbox"> Xbox</option>
+                <option value="Xbox"> Playstation</option>
+                <option value="Xbox"> Nintendo</option>
+            </select>
+            </form>
+            <br>
+            <br>
+            <h3>Multiple Select Boxes:</h3>
+            <form action="http://www.example.com/profile.php"></form>
+            <p>Do you like any of the following games?
+                (You can select more than one by holding down Control on PC
+                and Command on Mac while selecting multiple options.)
+            </p>
+            <select name="games" size="5" multiple="multiple">
+                <option value="Halo"> Halo</option>
+                <option value="Mario"> Mario</option>
+                <option value="Sonic"> Sonic</option>
+                <option value="Madden"> Madden</option>
+                <option value="Tony Hawk"> Tony Hawk</option>
+            </select>
+            <br>
+            <br>
+            </form>
+            <h3>Forms with Buttons:</h3>
+            <form action="http://www.example.com/upload.php" method="post"></form>
+            <p>Upload your file</p>
+            <input type="file" name="file" /><br />
+            <input type="submit" value="Upload" />
+            </form>
+            <form action="http://www.example.com/subscribe.php">
+                <p>Subscribe to our email list:</p>
+                <input type="text" name="email" />
+                <input type="submit" name="subscribe" value="Subscribe" />
+            </form>
+            <br>
+            <br>
+            <h3>Button with image:</h3>
+            <form action="http://www.example.org/subscribe.php">
+                <p>Subscribe to our email list:</p>
+                <input type="text" name="email" />
+                <input type="image" src="images/subscribe.jpg" width="100" height="20" />
+            </form>
+            <br>
+            <br>
+            <h3>Labeling Form Controls:</h3>
+            <form action="http://www.example.com/subscribe.php">
+                <label>Age: <input type="text" name="age" /></label>
+                <br />
+                Gender:
+                <input id="female" type="radio" name="gender" value="f">
+                <label for="female">Female</label>
+                <input id="male" type="radio" name="gender" value="m">
+                <label for="male">Male</label>
+            </form>
+            <br>
+            <br>
+            <h3>Grouping Form Elements:</h3>
+            <form action="http://www.example.com/subscribe.php">
+                <fieldset class="form">
+                    <legend>Contact details</legend>
+                    <label>Email:<br /><input type="text" name="email" /></label><br />
+                    <label>Mobile:<br /><input type="text" name="mobile" /></label><br />
+                    <label>Telephone:<br /><input type="text" name="telephone" /></label>
+                </fieldset>
+            </form>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="iframe">iFrames</h2>
+            <iframe src="https://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed" width="450" height="350" frameborder="1" scrolling="no">
+            </iframe>
+
+            <div id="header">
+                <br>
+                <br>
+                <h2>Yoda Fountain</h2>
+                <ul>
+                    <li><a href="https://www.lucasfilm.com/campuses/san-francisco/">Lucasfilm San Francisco</a></li>
+                    <li><a href="https://www.lucasfilm.com/productions/">Productions</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <p>Lucasfilm, San Francisco, California, 94129</p>
+                <p><span class="contact">Telephone</span> 415-623-1000</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.6249300651975!2d-122.45306072404473!3d37.798828810773806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085872a4f73f3fd%3A0xe9c90de80067ba0e!2sYoda%20Fountain!5e0!3m2!1sen!2sus!4v1703184810948!5m2!1sen!2sus" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div><!-- end content -->
+            <p>&copy; Lucasfilm</p>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="video">Video</h2>
+            <h4>Abstract art sample movie:</h4>
+            <video src="images/video.mp4" poster="images/video.png" width="400" height="300" preload="auto" controls autoplay="on" loop="on" loop>
+            </video>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>Click <a href="#top">here</a> to go back to the top of the page!</p>
+        </article>
+
+    </section>
+
+
 </body>
